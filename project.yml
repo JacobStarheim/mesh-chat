@@ -1,0 +1,62 @@
+# Generates MeshChat.xcodeproj. After editing, run: xcodegen generate
+name: MeshChat
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+packages:
+  MeshKit:
+    path: MeshKit
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Pick your team in Xcode (Signing & Capabilities) to run on an iPhone.
+    CODE_SIGN_STYLE: Automatic
+targets:
+  MeshChat-iOS:
+    type: application
+    platform: iOS
+    sources: [App/Shared]
+    dependencies:
+      - package: MeshKit
+        product: MeshCore
+      - package: MeshKit
+        product: BLETransport
+    info:
+      path: App/iOS/Info.plist
+      properties:
+        CFBundleDisplayName: MeshChat
+        NSBluetoothAlwaysUsageDescription: MeshChat uses Bluetooth to send messages directly between nearby devices, without the internet.
+        UIBackgroundModes: [bluetooth-central, bluetooth-peripheral]
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_NAME: MeshChat
+        # Change to something unique, e.g. no.yourname.meshchat
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.meshchat
+        TARGETED_DEVICE_FAMILY: "1,2"
+  MeshChat-macOS:
+    type: application
+    platform: macOS
+    sources: [App/Shared]
+    dependencies:
+      - package: MeshKit
+        product: MeshCore
+      - package: MeshKit
+        product: BLETransport
+    info:
+      path: App/macOS/Info.plist
+      properties:
+        CFBundleDisplayName: MeshChat
+        NSBluetoothAlwaysUsageDescription: MeshChat uses Bluetooth to send messages directly between nearby devices, without the internet.
+    settings:
+      base:
+        PRODUCT_NAME: MeshChat
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.meshchat.mac
+        # "Sign to Run Locally": no Apple developer account needed on the Mac.
+        CODE_SIGN_IDENTITY: "-"

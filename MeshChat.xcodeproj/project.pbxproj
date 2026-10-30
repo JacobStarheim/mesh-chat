@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07BCE17E5B7FE7A7672E4F9F /* BLETransport in Frameworks */ = {isa = PBXBuildFile; productRef = E18A53753FE62DD4920D89F0 /* BLETransport */; };
+		0F0B210B3EEB1117FF944CA1 /* MeshCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1E032D8638DBE3616AF92D /* MeshCore */; };
+		32E47B6BC6B560FD915CE998 /* MeshCore in Frameworks */ = {isa = PBXBuildFile; productRef = E932C0FC9D71B30333CBA7EB /* MeshCore */; };
+		3EA8FB3514FD4B4AD96B75FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67B220F09EDA7033A2BD63 /* ContentView.swift */; };
+		40B201435B8D8151D80443DC /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC75776B6C16EE6164CE77 /* ChatModel.swift */; };
+		50AE923D35369C3BBE5053BD /* MeshChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */; };
+		58304924495752ED70DB919F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67B220F09EDA7033A2BD63 /* ContentView.swift */; };
+		7134E0ABE9BBF96E111761CF /* MeshChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */; };
+		992692BE2C1C74CC2A755195 /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AC87399E82804FB9953AD /* IdentityStore.swift */; };
+		DF386FFC75C501D7F9D8939D /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AC87399E82804FB9953AD /* IdentityStore.swift */; };
+		EB4A0A316950B01D3C6C9826 /* BLETransport in Frameworks */ = {isa = PBXBuildFile; productRef = 78F5EF922CC1137891549CB5 /* BLETransport */; };
+		FA06E74A72302BC7E9351AEB /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC75776B6C16EE6164CE77 /* ChatModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1003021638BB952E541391B1 /* MeshKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MeshKit; path = MeshKit; sourceTree = SOURCE_ROOT; };
+		59DC75776B6C16EE6164CE77 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		8B67B220F09EDA7033A2BD63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A269552D4A6262C095D759F4 /* MeshChat-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "MeshChat-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C32810CC5A215D63C587A2 /* MeshChat-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeshChat-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76AC87399E82804FB9953AD /* IdentityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityStore.swift; sourceTree = "<group>"; };
+		D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshChatApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EC2E5F23DB2502805F98CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E47B6BC6B560FD915CE998 /* MeshCore in Frameworks */,
+				EB4A0A316950B01D3C6C9826 /* BLETransport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CC459A7B392793B574AE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0B210B3EEB1117FF944CA1 /* MeshCore in Frameworks */,
+				07BCE17E5B7FE7A7672E4F9F /* BLETransport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37CAA8D29AA3345CDC274C91 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				59DC75776B6C16EE6164CE77 /* ChatModel.swift */,
+				8B67B220F09EDA7033A2BD63 /* ContentView.swift */,
+				D76AC87399E82804FB9953AD /* IdentityStore.swift */,
+				D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */,
+			);
+			name = Shared;
+			path = App/Shared;
+			sourceTree = "<group>";
+		};
+		3C0020F8B52CE7A2597256FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A269552D4A6262C095D759F4 /* MeshChat-iOS.app */,
+				C0C32810CC5A215D63C587A2 /* MeshChat-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7715F75EA548728D5E716065 = {
+			isa = PBXGroup;
+			children = (
+				E917FC0AA77D7E39D95643F9 /* Packages */,
+				37CAA8D29AA3345CDC274C91 /* Shared */,
+				3C0020F8B52CE7A2597256FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E917FC0AA77D7E39D95643F9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1003021638BB952E541391B1 /* MeshKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B621529FF303F148C2158D57 /* MeshChat-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B3EF4B870307C447E15650 /* Build configuration list for PBXNativeTarget "MeshChat-iOS" */;
+			buildPhases = (
+				AC0649EA716A528C2B9AB86B /* Sources */,
+				B6CC459A7B392793B574AE7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeshChat-iOS";
+			packageProductDependencies = (
+				7F1E032D8638DBE3616AF92D /* MeshCore */,
+				E18A53753FE62DD4920D89F0 /* BLETransport */,
+			);
+			productName = "MeshChat-iOS";
+			productReference = A269552D4A6262C095D759F4 /* MeshChat-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB2B0DB63C7DC90BE3F362A /* MeshChat-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2877A507D380A12B7FB9F70 /* Build configuration list for PBXNativeTarget "MeshChat-macOS" */;
+			buildPhases = (
+				A46D58781A4F5C5187393036 /* Sources */,
+				9EC2E5F23DB2502805F98CF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeshChat-macOS";
+			packageProductDependencies = (
+				E932C0FC9D71B30333CBA7EB /* MeshCore */,
+				78F5EF922CC1137891549CB5 /* BLETransport */,
+			);
+			productName = "MeshChat-macOS";
+			productReference = C0C32810CC5A215D63C587A2 /* MeshChat-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31B3C195671DB79B60C90E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B621529FF303F148C2158D57 = {
+						ProvisioningStyle = Automatic;
+					};
+					FDB2B0DB63C7DC90BE3F362A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCAEC799898076F1EB3D0E1C /* Build configuration list for PBXProject "MeshChat" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7715F75EA548728D5E716065;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD1805695C4E399A9E1083DE /* XCLocalSwiftPackageReference "MeshKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3C0020F8B52CE7A2597256FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B621529FF303F148C2158D57 /* MeshChat-iOS */,
+				FDB2B0DB63C7DC90BE3F362A /* MeshChat-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A46D58781A4F5C5187393036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B201435B8D8151D80443DC /* ChatModel.swift in Sources */,
+				58304924495752ED70DB919F /* ContentView.swift in Sources */,
+				DF386FFC75C501D7F9D8939D /* IdentityStore.swift in Sources */,
+				7134E0ABE9BBF96E111761CF /* MeshChatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0649EA716A528C2B9AB86B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06E74A72302BC7E9351AEB /* ChatModel.swift in Sources */,
+				3EA8FB3514FD4B4AD96B75FE /* ContentView.swift in Sources */,
+				992692BE2C1C74CC2A755195 /* IdentityStore.swift in Sources */,
+				50AE923D35369C3BBE5053BD /* MeshChatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25F181AD90BF7851536DCF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meshchat;
+				PRODUCT_NAME = MeshChat;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A4F1F9E3FB20F25ED783EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5E2437DA8288091D9AE1C6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meshchat.mac;
+				PRODUCT_NAME = MeshChat;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6CA06DF9BF1A90D07719D543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		939EECC19ED1B21F916DF57C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meshchat;
+				PRODUCT_NAME = MeshChat;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEEF635C7B5E52BA91AC05E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meshchat.mac;
+				PRODUCT_NAME = MeshChat;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55B3EF4B870307C447E15650 /* Build configuration list for PBXNativeTarget "MeshChat-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939EECC19ED1B21F916DF57C /* Debug */,
+				25F181AD90BF7851536DCF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCAEC799898076F1EB3D0E1C /* Build configuration list for PBXProject "MeshChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA06DF9BF1A90D07719D543 /* Debug */,
+				2A4F1F9E3FB20F25ED783EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2877A507D380A12B7FB9F70 /* Build configuration list for PBXNativeTarget "MeshChat-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEF635C7B5E52BA91AC05E9 /* Debug */,
+				5E2437DA8288091D9AE1C6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DD1805695C4E399A9E1083DE /* XCLocalSwiftPackageReference "MeshKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MeshKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78F5EF922CC1137891549CB5 /* BLETransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BLETransport;
+		};
+		7F1E032D8638DBE3616AF92D /* MeshCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeshCore;
+		};
+		E18A53753FE62DD4920D89F0 /* BLETransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BLETransport;
+		};
+		E932C0FC9D71B30333CBA7EB /* MeshCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeshCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D31B3C195671DB79B60C90E7 /* Project object */;
+}
