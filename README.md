@@ -9,6 +9,22 @@ hop from phone to phone across a room, a building or a festival.
 - **Store-and-forward**: devices carry recent messages and hand them to people they
   meet later, so the mesh doesn't need to be connected all at once.
 
+<table>
+  <tr>
+    <td><img src="docs/chat.png" width="250" alt="Public channel with messages that arrived directly, via 1 relay and via 2 relays"></td>
+    <td><img src="docs/people.png" width="250" alt="People nearby, with an unread direct message from carol"></td>
+    <td><img src="docs/dm.png" width="250" alt="End-to-end encrypted direct message conversation with carol, two relays away"></td>
+  </tr>
+  <tr>
+    <td align="center">Public channel: carol is two relays away</td>
+    <td align="center">People nearby</td>
+    <td align="center">Encrypted DM through two relays</td>
+  </tr>
+</table>
+
+*Screenshots from [demo mode](#demo-mode): the real mesh code running over a simulated
+network, because the iOS Simulator has no Bluetooth.*
+
 ## How it works
 
 ```
@@ -110,7 +126,19 @@ open MeshChat.xcodeproj
 - To test relaying (A → B → C), you need three devices, with A and C out of range of
   each other. A Mac, your phone and a borrowed phone are enough.
 
-Tests and simulation (no devices needed):
+### Demo mode
+
+Launch with the `-demo` argument (in Xcode: *Product → Scheme → Edit Scheme → Run →
+Arguments*) to try the app without Bluetooth or a second device. The app's own
+`MeshRouter` then runs over the in-memory `SimulatedNetwork` with four virtual
+neighbours, laid out as `dave ── you ── alice ── bob ── carol`. They post a short
+conversation, carol sends you an encrypted DM, and they reply to DMs you send. The
+routing, signatures and encryption are the same code that runs over BLE; only the
+radio is simulated.
+
+### Tests and simulation
+
+No devices needed:
 
 ```bash
 cd MeshKit

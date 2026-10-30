@@ -102,9 +102,9 @@ private struct StatusBar: View {
     var body: some View {
         HStack(spacing: 6) {
             Circle()
-                .fill(model.status == .ready ? Color.green : Color.orange)
+                .fill(model.isReady ? Color.green : Color.orange)
                 .frame(width: 8, height: 8)
-            Text(model.status.label)
+            Text(model.statusText)
             Spacer()
             Text(model.linkCount == 1 ? "1 link" : "\(model.linkCount) links")
         }

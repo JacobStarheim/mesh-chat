@@ -36,18 +36,29 @@ final class ChatModel {
 
     private let transport = BLEMeshTransport()
     private let router: MeshRouter
+    /// Set when launched with `-demo`: virtual neighbours instead of Bluetooth.
+    private let demo: DemoMesh?
     private var started = false
 
-    init() {
+    init(demo useDemo: Bool = ProcessInfo.processInfo.arguments.contains("-demo")) {
         let identity = IdentityStore.loadOrCreate()
         nickname = identity.nickname
-        router = MeshRouter(identity: identity, transport: transport)
+        if useDemo {
+            let demo = DemoMesh()
+            self.demo = demo
+            router = MeshRouter(identity: identity, transport: demo.transport)
+        } else {
+            demo = nil
+            router = MeshRouter(identity: identity, transport: transport)
+        }
         router.delegate = self
         transport.onStatusChange = { [weak self] status in
             self?.status = status
         }
     }
 
+    var statusText: String { demo == nil ? status.label : "Demo mode: simulated neighbours" }
+    var isReady: Bool { demo != nil || status == .ready }
     var myName: String { "\(nickname)#\(Fingerprint.short(router.identity.publicKey))" }
     var fingerprint: String { router.identity.fingerprint.map { String(format: "%02x", $0) }.joined() }
 
@@ -66,6 +77,7 @@ final class ChatModel {
         guard !started else { return }
         started = true
         router.start()
+        demo?.start()
     }
 
     func canSend(in conversation: Conversation) -> Bool {
@@ -91,6 +103,7 @@ final class ChatModel {
                 ChatLine(id: packet.id, author: myName, text: trimmed, date: packet.date, relays: nil, isMine: true),
                 to: conversation
             )
+            demo?.run()
         } catch MeshRouter.SendError.messageTooLong {
             lastError = "That message is too long. The limit is 500 bytes."
         } catch {
@@ -104,6 +117,7 @@ final class ChatModel {
         nickname = trimmed
         IdentityStore.saveNickname(trimmed)
         router.setNickname(trimmed)
+        demo?.run()
     }
 
     func title(for conversation: Conversation) -> String {
@@ -148,7 +162,7 @@ extension ChatModel: MeshRouterDelegate {
     }
 
     func routerDidUpdatePeers(_ router: MeshRouter) {
-        peers = router.peers.values.sorted { $0.lastSeen > $1.lastSeen }
+        peers = router.peers.values.sorted { $0.displayName.localizedStandardCompare($1.displayName) == .orderedAscending }
     }
 
     func routerDidUpdateLinks(_ router: MeshRouter) {

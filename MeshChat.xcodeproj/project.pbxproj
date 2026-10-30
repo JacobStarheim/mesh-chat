@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		07BCE17E5B7FE7A7672E4F9F /* BLETransport in Frameworks */ = {isa = PBXBuildFile; productRef = E18A53753FE62DD4920D89F0 /* BLETransport */; };
 		0F0B210B3EEB1117FF944CA1 /* MeshCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1E032D8638DBE3616AF92D /* MeshCore */; };
+		141508544085DFA0AF35E1AA /* DemoMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F08958436C06DA57ED060 /* DemoMesh.swift */; };
 		32E47B6BC6B560FD915CE998 /* MeshCore in Frameworks */ = {isa = PBXBuildFile; productRef = E932C0FC9D71B30333CBA7EB /* MeshCore */; };
 		3EA8FB3514FD4B4AD96B75FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67B220F09EDA7033A2BD63 /* ContentView.swift */; };
 		40B201435B8D8151D80443DC /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC75776B6C16EE6164CE77 /* ChatModel.swift */; };
 		50AE923D35369C3BBE5053BD /* MeshChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */; };
 		58304924495752ED70DB919F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67B220F09EDA7033A2BD63 /* ContentView.swift */; };
+		6ECE066CECA79F943E496AB0 /* DemoMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F08958436C06DA57ED060 /* DemoMesh.swift */; };
 		7134E0ABE9BBF96E111761CF /* MeshChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */; };
 		992692BE2C1C74CC2A755195 /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AC87399E82804FB9953AD /* IdentityStore.swift */; };
 		DF386FFC75C501D7F9D8939D /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AC87399E82804FB9953AD /* IdentityStore.swift */; };
@@ -23,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1003021638BB952E541391B1 /* MeshKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MeshKit; path = MeshKit; sourceTree = SOURCE_ROOT; };
+		1F9F08958436C06DA57ED060 /* DemoMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMesh.swift; sourceTree = "<group>"; };
 		59DC75776B6C16EE6164CE77 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		8B67B220F09EDA7033A2BD63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A269552D4A6262C095D759F4 /* MeshChat-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "MeshChat-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +61,7 @@
 			children = (
 				59DC75776B6C16EE6164CE77 /* ChatModel.swift */,
 				8B67B220F09EDA7033A2BD63 /* ContentView.swift */,
+				1F9F08958436C06DA57ED060 /* DemoMesh.swift */,
 				D76AC87399E82804FB9953AD /* IdentityStore.swift */,
 				D9354D3EEA5C26A908E692DA /* MeshChatApp.swift */,
 			);
@@ -181,6 +185,7 @@
 			files = (
 				40B201435B8D8151D80443DC /* ChatModel.swift in Sources */,
 				58304924495752ED70DB919F /* ContentView.swift in Sources */,
+				141508544085DFA0AF35E1AA /* DemoMesh.swift in Sources */,
 				DF386FFC75C501D7F9D8939D /* IdentityStore.swift in Sources */,
 				7134E0ABE9BBF96E111761CF /* MeshChatApp.swift in Sources */,
 			);
@@ -192,6 +197,7 @@
 			files = (
 				FA06E74A72302BC7E9351AEB /* ChatModel.swift in Sources */,
 				3EA8FB3514FD4B4AD96B75FE /* ContentView.swift in Sources */,
+				6ECE066CECA79F943E496AB0 /* DemoMesh.swift in Sources */,
 				992692BE2C1C74CC2A755195 /* IdentityStore.swift in Sources */,
 				50AE923D35369C3BBE5053BD /* MeshChatApp.swift in Sources */,
 			);
